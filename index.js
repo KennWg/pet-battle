@@ -72,7 +72,15 @@ function animation() {
         background.position.x += 3;
     } else if(keys.d.pressed && lastKey === 'd'){
         background.position.x -= 3;
-    }
+    } else if(keys.w.pressed){
+        background.position.y += 3;
+    } else if(keys.s.pressed){
+        background.position.y -= 3;
+    } else if(keys.a.pressed){
+        background.position.x += 3;
+    } else if(keys.d.pressed){
+        background.position.x -= 3;
+    };
 }
 animation();
 
